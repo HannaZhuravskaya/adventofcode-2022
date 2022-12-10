@@ -10,10 +10,6 @@ fun moveTail(arr: Array<Point>, set: MutableSet<Pair<Int,Int>>){
     set.add(Pair(arr[9].x, arr[9].y))
 }
 
-fun mod(a: Int):Int{
-    return if(a>0) a else -a
-}
-
 fun moveTail(head: Point, tail: Point){
     if(mod(head.x - tail.x) == 2 && mod(head.y - tail.y) == 2){
         if(head.x - tail.x == 2){
@@ -106,5 +102,4 @@ fun main(args:Array<String>) {
     println (set.size)
 }
 
-data class Point(var x: Int, var y: Int){
-}
+data class Point(var x: Int, var y: Int){}

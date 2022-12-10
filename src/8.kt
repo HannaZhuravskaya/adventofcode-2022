@@ -2,10 +2,6 @@ package adventofcode2022
 
 import adventofcode2022.common.*
 
-fun max(a: Int, b: Int): Int{
-    return if(a > b) a else b
-}
-
 fun main(args:Array<String>) {
     var lines = readFileAsLines("/Users/hzhuravskaya/Documents/adventofcode-2022/inputs/8.txt")
 

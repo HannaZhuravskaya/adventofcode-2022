@@ -2,10 +2,6 @@ package adventofcode2022
 
 import adventofcode2022.common.*
 
-fun mod(a: Int):Int{
-    return if(a>0) a else -a
-}
-
 fun moveTail(head: Point, tail: Point, set: MutableSet<Pair<Int,Int>>){
     if(mod(head.x - tail.x) == 2 && mod(head.y - tail.y) == 2){
         if(head.x - tail.x == 2){
