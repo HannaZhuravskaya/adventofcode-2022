@@ -1,15 +1,12 @@
 package adventofcode2022
 
-import java.io.File
-import java.util.Arrays
-
-fun readFileAsLines(fileName: String): List<String> = File(fileName).readLines()
+import adventofcode2022.common.*
 
 fun moveTail(arr: Array<Point>, set: MutableSet<Pair<Int,Int>>){
     for(i in 0..8){
         moveTail(arr[i], arr[i+1])
     }
-    
+
     set.add(Pair(arr[9].x, arr[9].y))
 }
 

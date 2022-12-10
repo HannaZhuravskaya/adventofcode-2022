@@ -1,9 +1,7 @@
 package adventofcode2022
 
-import java.io.File
+import adventofcode2022.common.*
 import java.util.ArrayDeque
-
-fun readFileAsLines(fileName: String): List<String> = File(fileName).readLines()
 
 fun readStacks(lines: List<String>, stackNumLineIndex: Int):MutableList<ArrayDeque<Char>>{
     var stackNumLine = lines[stackNumLineIndex]

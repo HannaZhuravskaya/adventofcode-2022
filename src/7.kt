@@ -1,9 +1,6 @@
 package adventofcode2022
 
-import java.io.File
-import java.util.ArrayDeque
-
-fun readFileAsLines(fileName: String): List<String> = File(fileName).readLines()
+import adventofcode2022.common.*
 
 fun buildFileSystem(lines: List<String>): Folder{
     val goToChildRegex = "[$]{1} cd (.+)".toRegex()

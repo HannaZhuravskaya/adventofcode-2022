@@ -1,9 +1,6 @@
 package adventofcode2022
 
-import java.io.File
-import java.util.ArrayDeque
-
-fun readFileAsLines(fileName: String): List<String> = File(fileName).readLines()
+import adventofcode2022.common.*
 
 fun main(args:Array<String>) { 
     val addRegex = "addx ([-]{0,1}\\d+)".toRegex()

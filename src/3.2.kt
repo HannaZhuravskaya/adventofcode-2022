@@ -1,8 +1,6 @@
 package adventofcode2022
 
-import java.io.File
-
-fun readFileAsLines(fileName: String): List<String> = File(fileName).readLines()
+import adventofcode2022.common.*
 
 fun getPriority(item: Char): Int{
     var value = item.toInt()

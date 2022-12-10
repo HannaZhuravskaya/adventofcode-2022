@@ -1,9 +1,6 @@
 package adventofcode2022
 
-import java.io.File
-import java.util.ArrayDeque
-
-fun readFileAsLine(fileName: String): String = File(fileName).readLines()[0]
+import adventofcode2022.common.*
 
 fun main(args:Array<String>) {
     var line = readFileAsLine("/Users/hzhuravskaya/Documents/adventofcode-2022/inputs/6.2.txt")

@@ -1,9 +1,6 @@
 package adventofcode2022
 
-import java.io.File
-import kotlin.math.*
-
-fun readFileAsLines(fileName: String): List<String> = File(fileName).readLines()
+import adventofcode2022.common.*
 
 fun max(a: Int, b: Int): Int{
     return if(a > b) a else b
